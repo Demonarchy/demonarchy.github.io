@@ -55,17 +55,7 @@ h6 {
     height: 37px;
 }
 
-/* White quad sticker */
-.stickerone {
-    outline: none;    
-    height: 300px;
-    width:  300px;
-    background-color: #ededed;
-    -webkit-clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
-            clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
-}
-
-/* Margin */
+/* Margins */
 .m5 {
     margin: 5px;
 }
@@ -79,7 +69,7 @@ h6 {
 }
 
 .m20 {
-    margin: 20px
+    margin: 20px;
 }
 
 /* Background */
@@ -93,8 +83,9 @@ h6 {
     color: #ededed;
 }
 
-/* Header animation big screens */
-@media screen and (min-width: 600px) {
+/* Big screens */
+@media screen and (min-width: 450px) {
+    /* Header animation */
     .h1flicker {
         font-family: 'Fredoka One';
         font-size: 4em;
@@ -128,10 +119,26 @@ h6 {
         -webkit-animation: flicker 3s linear infinite;
                 animation: flicker 3s linear infinite;
     }
+
+    /* Phone image adjustment */
+    .phoneIMGreduction {
+        height: 650px;
+    }
+
+    /* White quad sticker */
+    .stickerone {
+        outline: none;    
+        height: 300px;
+        width:  300px;
+        background-color: #ededed;
+        -webkit-clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
+                clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
+    }
 }
 
-/* Header animation small screens */
-@media screen and (max-width: 600px) {
+/* Small screens */
+@media screen and (max-width: 450px) {
+    /* Header animation */
     .h1flicker {
         font-family: 'Fredoka One';
         font-size: 12vw;
@@ -160,6 +167,25 @@ h6 {
         text-align: left;
         -webkit-animation: flicker 3s linear infinite;
                 animation: flicker 3s linear infinite;
+    }
+
+    /* Phone image adjustment */
+    .phoneIMGreduction {
+        width: 70vw;
+    }
+
+    /* White quad sticker */
+    .stickerone {
+        outline: none;    
+        height: 80vw;
+        width: 60vw;
+        background-color: #ededed;
+        -webkit-clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
+                clip-path: polygon(0 25%, 100% 20%, 100% 80%, 0 75%);
+    }
+
+    .scaledAt90 {
+        transform: scale(.9);
     }
 }
 
