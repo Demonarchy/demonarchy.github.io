@@ -93,41 +93,7 @@ h6 {
     color: #ededed;
 }
 
-.h1flicker {
-    font-family: 'Fredoka One';
-    font-size: 4em;
-    text-align: center;
-    white-space: nowrap;
-    line-height: 1;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    position: absolute;
-    color: #ededed;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ffffff, 0 0 15px #efefef, 0 0 2px #ededed, 0 2px 3px #000;
-    letter-spacing: -.0005em;
-    word-spacing: .625em;
-    -webkit-text-size-adjust: 60%;
-            text-size-adjust: 60%;
-            
-}
-.h1flicker::before {
-    content: attr(data-heading);
-    position: absolute;
-    overflow: hidden;
-    color: #ededed;
-    width: 100%;
-    z-index: 5;
-    text-shadow: none;
-    /* left: 0%; */
-    text-align: left;
-    -webkit-animation: flicker 3s linear infinite;
-            animation: flicker 3s linear infinite;
-}
-
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
     .h1flicker {
         font-family: 'Fredoka One';
         font-size: 4em;
@@ -144,8 +110,42 @@ h6 {
         text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ffffff, 0 0 15px #efefef, 0 0 2px #ededed, 0 2px 3px #000;
         letter-spacing: -.0005em;
         word-spacing: .625em;
-        -webkit-text-size-adjust: 10%;
-                text-size-adjust: 10%;
+        -webkit-text-size-adjust: 60%;
+                text-size-adjust: 60%;
+                
+    }
+    .h1flicker::before {
+        content: attr(data-heading);
+        position: absolute;
+        overflow: hidden;
+        color: #ededed;
+        width: 100%;
+        z-index: 5;
+        text-shadow: none;
+        /* left: 0%; */
+        text-align: left;
+        -webkit-animation: flicker 3s linear infinite;
+                animation: flicker 3s linear infinite;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .h1flicker {
+        font-family: 'Fredoka One';
+        font-size: 12vw;
+        text-align: center;
+        white-space: nowrap;
+        line-height: 1;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        position: absolute;
+        color: #ededed;
+        text-shadow: -.8px -.8px 0 rgba(255, 255, 255, 0.4), .8px -.8px 0 rgba(255, 255, 255, 0.4), -.8px .8px 0 rgba(255, 255, 255, 0.4), .8px .8px 0 rgba(255, 255, 255, 0.4), 0 -1px 6px, 0 0 1px, 0 0 4px #ffffff, 0 0 10px #efefef, 0 0 1px #ededed, 0 1px 2px #000;
+        letter-spacing: -.0005em;
+        word-spacing: .625em;
     }
     .h1flicker::before {
         content: attr(data-heading);
