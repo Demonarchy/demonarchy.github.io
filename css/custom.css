@@ -121,7 +121,7 @@ h6 {
     width: 100%;
     z-index: 5;
     text-shadow: none;
-    left: 18.7%;
+    left: 0%;
     text-align: left;
     -webkit-animation: flicker 3s linear infinite;
             animation: flicker 3s linear infinite;
