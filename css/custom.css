@@ -93,7 +93,12 @@ h6 {
     color: #ededed;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 600px){
+=======
+/* Header animation big screens */
+@media screen and (min-width: 600px) {
+>>>>>>> master
     .h1flicker {
         font-family: 'Fredoka One';
         font-size: 4em;
@@ -129,7 +134,12 @@ h6 {
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 600px){
+=======
+/* Header animation small screens */
+@media screen and (max-width: 600px) {
+>>>>>>> master
     .h1flicker {
         font-family: 'Fredoka One';
         font-size: 12vw;
@@ -155,7 +165,10 @@ h6 {
         width: 100%;
         z-index: 5;
         text-shadow: none;
+<<<<<<< HEAD
         /* left: 0%; */
+=======
+>>>>>>> master
         text-align: left;
         -webkit-animation: flicker 3s linear infinite;
                 animation: flicker 3s linear infinite;
