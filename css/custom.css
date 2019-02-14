@@ -194,8 +194,16 @@ h6 {
     cursor: default;
 }
 
-/* Disables the hability to select text */
-.userselectnull {
+/* Disables the ability to drag images */
+.userdrag {
+    -webkit-user-drag: none;  /* Chrome & all */
+    -moz-user-drag: none;     /* Firefox all */
+    -ms-user-drag: none;      /* IE 10+ */
+    user-select: none;
+}
+
+/* Disables the ability to select text */
+.userselect {
     -webkit-user-select: none;  /* Chrome & all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
