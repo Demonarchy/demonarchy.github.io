@@ -1,5 +1,5 @@
 /* Backgrounds: Use on <section> if you want full width  */
 
 .bg-g-purple {
-    background: linear-gradient(90deg, rgb(81, 1, 112) 50%, rgb(175, 19, 175) 100%);    
+    background-color: linear-gradient(90deg, rgb(81, 1, 112) 50%, rgb(175, 19, 175) 100%);    
 }
