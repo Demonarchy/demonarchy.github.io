@@ -1,5 +1,4 @@
 /* Backgrounds: Use on <section> if you want full width  */
-
 .bg-purple
 {
     background: rgb(0,0,0);
@@ -11,30 +10,23 @@
 }
 
 /* Settings */
-
-.default-cursor
+.custom-settings
 {
+    /* Default mouse cursor on everything */
     cursor: default;
-}
-
-.userdrag 
-{
-    -webkit-user-drag: none;  /* Chrome & all */
-    -moz-user-drag: none;     /* Firefox all */
-    -ms-user-drag: none;      /* IE 10+ */
+    /* Prevents mouse drag */
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-select: none;
+    /* Prevents text select */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
-.userselect 
-{
-    -webkit-user-select: none;  /* Chrome & all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none; 
-}
-
 /* Text */
-
 .h1-white
 {
     color: rgb(220, 220, 220);
@@ -44,11 +36,20 @@
     letter-spacing: 2px;
 }
 
-.h2-white
+.h3-white
 {
     color: rgb(0,0,0);
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.h6-white
+{
+    color: rgb(0,0,0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
 }
